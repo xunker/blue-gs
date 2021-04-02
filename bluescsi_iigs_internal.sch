@@ -1,0 +1,680 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x13_Top_Bottom J1
+U 1 1 60601454
+P 1300 1550
+F 0 "J1" H 1350 2367 50  0000 C CNN
+F 1 "Conn_02x13_Top_Bottom" H 1350 2276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 1300 1550 50  0001 C CNN
+F 3 "~" H 1300 1550 50  0001 C CNN
+	1    1300 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x13_Top_Bottom J2
+U 1 1 6060317B
+P 1300 3400
+F 0 "J2" H 1350 4217 50  0000 C CNN
+F 1 "Conn_02x13_Top_Bottom" H 1350 4126 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 1300 3400 50  0001 C CNN
+F 3 "~" H 1300 3400 50  0001 C CNN
+	1    1300 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 800  700  0    50   ~ 0
+In from Apple Rev. C SCSI card
+Text Notes 800  2550 0    50   ~ 0
+Out to DB-25 rear connector
+Text Label 1100 950  2    50   ~ 0
+SCSI_REQ
+Text Label 1100 1150 2    50   ~ 0
+SCSI_I_O
+Text Label 1100 1350 2    50   ~ 0
+SCSI_ACK
+Text Label 1100 1550 2    50   ~ 0
+SCSI_GND
+Text Label 1100 1750 2    50   ~ 0
+SCSI_GND
+NoConn ~ 1600 2150
+NoConn ~ 1600 4000
+Text Label 1600 1650 0    50   ~ 0
+SCSI_DB1
+Text Label 1600 2050 0    50   ~ 0
+SCSI_TERMPWR
+Text Label 1600 1850 0    50   ~ 0
+SCSI_DB4
+Text Label 1600 1450 0    50   ~ 0
+SCSI_SEL
+Text Label 1600 1250 0    50   ~ 0
+SCSI_ATN
+Text Label 1600 1050 0    50   ~ 0
+SCSI_C_D
+Text Label 1100 2150 2    50   ~ 0
+SCSI_DB7
+Text Label 1100 1950 2    50   ~ 0
+SCSI_DB5
+Text Label 1100 1050 2    50   ~ 0
+SCSI_MSG
+Text Label 1100 1250 2    50   ~ 0
+SCSI_RST
+Text Label 1100 1450 2    50   ~ 0
+SCSI_BSY
+Text Label 1600 1350 0    50   ~ 0
+SCSI_GND
+Text Label 1600 1150 0    50   ~ 0
+SCSI_GND
+Text Label 1600 950  0    50   ~ 0
+SCSI_GND
+Text Label 1600 1950 0    50   ~ 0
+SCSI_GND
+Text Label 1100 1650 2    50   ~ 0
+SCSI_DB0
+Text Label 1100 1850 2    50   ~ 0
+SCSI_DB3
+Text Label 1100 2050 2    50   ~ 0
+SCSI_DB6
+Text Label 1600 1550 0    50   ~ 0
+SCSI_DBP
+Text Label 1600 1750 0    50   ~ 0
+SCSI_DB2
+Text Label 3100 750  2    50   ~ 0
+SCSI_TERMPWR
+$Comp
+L power:+5V #PWR0101
+U 1 1 606198ED
+P 3550 750
+F 0 "#PWR0101" H 3550 600 50  0001 C CNN
+F 1 "+5V" H 3565 923 50  0000 C CNN
+F 2 "" H 3550 750 50  0001 C CNN
+F 3 "" H 3550 750 50  0001 C CNN
+	1    3550 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6061A0BF
+P 3300 1300
+F 0 "#PWR0102" H 3300 1050 50  0001 C CNN
+F 1 "GND" H 3305 1127 50  0000 C CNN
+F 2 "" H 3300 1300 50  0001 C CNN
+F 3 "" H 3300 1300 50  0001 C CNN
+	1    3300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 6061A66B
+P 5100 4050
+F 0 "#PWR0103" H 5100 3800 50  0001 C CNN
+F 1 "GND" H 5105 3877 50  0000 C CNN
+F 2 "" H 5100 4050 50  0001 C CNN
+F 3 "" H 5100 4050 50  0001 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+Text Label 3050 1300 2    50   ~ 0
+SCSI_GND
+Wire Wire Line
+	5100 3950 5200 3950
+Wire Wire Line
+	5200 3950 5300 3950
+Connection ~ 5200 3950
+Wire Wire Line
+	5100 3950 5100 4050
+Connection ~ 5100 3950
+$Comp
+L power:+5V #PWR0104
+U 1 1 6061C92A
+P 5200 1750
+F 0 "#PWR0104" H 5200 1600 50  0001 C CNN
+F 1 "+5V" H 5215 1923 50  0000 C CNN
+F 2 "" H 5200 1750 50  0001 C CNN
+F 3 "" H 5200 1750 50  0001 C CNN
+	1    5200 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 6061CFE5
+P 2000 5050
+F 0 "#PWR0105" H 2000 4900 50  0001 C CNN
+F 1 "+3.3V" H 2015 5223 50  0000 C CNN
+F 2 "" H 2000 5050 50  0001 C CNN
+F 3 "" H 2000 5050 50  0001 C CNN
+	1    2000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 6061D830
+P 5300 1750
+F 0 "#PWR0106" H 5300 1600 50  0001 C CNN
+F 1 "+3.3V" H 5315 1923 50  0000 C CNN
+F 2 "" H 5300 1750 50  0001 C CNN
+F 3 "" H 5300 1750 50  0001 C CNN
+	1    5300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 6061DD87
+P 5400 1750
+F 0 "#PWR0107" H 5400 1600 50  0001 C CNN
+F 1 "+3.3V" H 5415 1923 50  0000 C CNN
+F 2 "" H 5400 1750 50  0001 C CNN
+F 3 "" H 5400 1750 50  0001 C CNN
+	1    5400 1750
+	1    0    0    -1  
+$EndComp
+Text Label 4500 3050 2    50   ~ 0
+SCSI_MSG
+Text Label 4500 2950 2    50   ~ 0
+SCSI_RST
+Text Label 4500 2550 2    50   ~ 0
+SCSI_BSY
+Text Label 6100 2150 0    50   ~ 0
+SCSI_DB3
+Text Label 4500 2250 2    50   ~ 0
+SCSI_DB6
+Text Label 6100 2450 0    50   ~ 0
+SCSI_DBP
+Text Label 6100 2250 0    50   ~ 0
+SCSI_DB2
+Text Label 4500 3350 2    50   ~ 0
+SCSI_REQ
+Text Label 4500 3450 2    50   ~ 0
+SCSI_I_O
+Text Label 4500 2650 2    50   ~ 0
+SCSI_ACK
+Text Label 4500 3650 2    50   ~ 0
+SCSI_DB1
+Text Label 4500 2050 2    50   ~ 0
+SCSI_DB4
+Text Label 4500 3150 2    50   ~ 0
+SCSI_SEL
+Text Label 4500 2450 2    50   ~ 0
+SCSI_ATN
+Text Label 4500 3250 2    50   ~ 0
+SCSI_C_D
+Text Label 4500 2350 2    50   ~ 0
+SCSI_DB7
+Text Label 4500 2150 2    50   ~ 0
+SCSI_DB5
+Text Label 4500 3550 2    50   ~ 0
+SCSI_DB0
+$Comp
+L MCU_ST_STM32F1:YAAJ_BluePill U1
+U 1 1 605FE9FD
+P 5300 2850
+F 0 "U1" H 5300 1519 50  0000 C CNN
+F 1 "YAAJ_BluePill" H 5300 1428 50  0000 C CNN
+F 2 "my library:YAAJ_BluePill_2" V 5225 3800 50  0001 C CNN
+F 3 "" V 5225 3800 50  0001 C CNN
+	1    5300 2850
+	1    0    0    -1  
+$EndComp
+Text Label 6100 2850 0    50   ~ 0
+SD_CS
+Text Label 6100 2750 0    50   ~ 0
+SD_CSK
+Text Label 6100 2650 0    50   ~ 0
+SD_MISO
+Text Label 6100 2550 0    50   ~ 0
+SD_MOSI
+$Comp
+L Connector:Micro_SD_Card J3
+U 1 1 6062225F
+P 3300 5050
+F 0 "J3" H 3250 5767 50  0000 C CNN
+F 1 "Micro_SD_Card" H 3250 5676 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Molex_104031-0811" H 4450 5350 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 3300 5050 50  0001 C CNN
+	1    3300 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 60623212
+P 2000 5250
+F 0 "#PWR0108" H 2000 5000 50  0001 C CNN
+F 1 "GND" H 2005 5077 50  0000 C CNN
+F 2 "" H 2000 5250 50  0001 C CNN
+F 3 "" H 2000 5250 50  0001 C CNN
+	1    2000 5250
+	1    0    0    -1  
+$EndComp
+Text Label 2400 4850 2    50   ~ 0
+SD_CS
+Text Label 2400 5150 2    50   ~ 0
+SD_CSK
+Text Label 2400 5350 2    50   ~ 0
+SD_MISO
+Text Label 2400 4950 2    50   ~ 0
+SD_MOSI
+$Comp
+L power:GND #PWR0109
+U 1 1 60623E38
+P 4100 5650
+F 0 "#PWR0109" H 4100 5400 50  0001 C CNN
+F 1 "GND" H 4105 5477 50  0000 C CNN
+F 2 "" H 4100 5650 50  0001 C CNN
+F 3 "" H 4100 5650 50  0001 C CNN
+	1    4100 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5050 2400 5050
+Wire Wire Line
+	2400 5250 2000 5250
+NoConn ~ 2400 5450
+NoConn ~ 2400 4750
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60629B83
+P 1750 6100
+F 0 "H1" H 1850 6146 50  0000 L CNN
+F 1 "MountingHole" H 1850 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 1750 6100 50  0001 C CNN
+F 3 "~" H 1750 6100 50  0001 C CNN
+	1    1750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6062A4C4
+P 1750 6300
+F 0 "H2" H 1850 6346 50  0000 L CNN
+F 1 "MountingHole" H 1850 6255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 1750 6300 50  0001 C CNN
+F 3 "~" H 1750 6300 50  0001 C CNN
+	1    1750 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 6062FC1A
+P 5500 5350
+F 0 "SW1" H 5500 5635 50  0000 C CNN
+F 1 "SW_SPDT" H 5500 5544 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 5500 5350 50  0001 C CNN
+F 3 "~" H 5500 5350 50  0001 C CNN
+	1    5500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60631033
+P 7650 4500
+F 0 "D2" H 7643 4717 50  0000 C CNN
+F 1 "LED" H 7643 4626 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7650 4500 50  0001 C CNN
+F 3 "~" H 7650 4500 50  0001 C CNN
+	1    7650 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60632077
+P 6550 3550
+F 0 "D1" H 6543 3767 50  0000 C CNN
+F 1 "LED" H 6543 3676 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6550 3550 50  0001 C CNN
+F 3 "~" H 6550 3550 50  0001 C CNN
+	1    6550 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 606332E3
+P 6250 3550
+F 0 "R1" V 6043 3550 50  0000 C CNN
+F 1 "330" V 6134 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6180 3550 50  0001 C CNN
+F 3 "~" H 6250 3550 50  0001 C CNN
+	1    6250 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60634BDC
+P 7350 4500
+F 0 "R2" V 7143 4500 50  0000 C CNN
+F 1 "470" V 7234 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7280 4500 50  0001 C CNN
+F 3 "~" H 7350 4500 50  0001 C CNN
+	1    7350 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 60635DA0
+P 7950 4500
+F 0 "#PWR0111" H 7950 4250 50  0001 C CNN
+F 1 "GND" H 7955 4327 50  0000 C CNN
+F 2 "" H 7950 4500 50  0001 C CNN
+F 3 "" H 7950 4500 50  0001 C CNN
+	1    7950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4500 7950 4500
+$Comp
+L power:+5V #PWR0113
+U 1 1 60637375
+P 6950 4500
+F 0 "#PWR0113" H 6950 4350 50  0001 C CNN
+F 1 "+5V" H 6965 4673 50  0000 C CNN
+F 2 "" H 6950 4500 50  0001 C CNN
+F 3 "" H 6950 4500 50  0001 C CNN
+	1    6950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4500 6950 4500
+$Comp
+L Device:C C1
+U 1 1 606444B6
+P 9850 1550
+F 0 "C1" H 9965 1596 50  0000 L CNN
+F 1 "4.7uF, 6.3v" H 9965 1505 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 9888 1400 50  0001 C CNN
+F 3 "~" H 9850 1550 50  0001 C CNN
+	1    9850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 60647A91
+P 9700 1750
+F 0 "#PWR0114" H 9700 1500 50  0001 C CNN
+F 1 "GND" H 9705 1577 50  0000 C CNN
+F 2 "" H 9700 1750 50  0001 C CNN
+F 3 "" H 9700 1750 50  0001 C CNN
+	1    9700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 606489F3
+P 8150 1600
+F 0 "#PWR0115" H 8150 1350 50  0001 C CNN
+F 1 "GND" H 8155 1427 50  0000 C CNN
+F 2 "" H 8150 1600 50  0001 C CNN
+F 3 "" H 8150 1600 50  0001 C CNN
+	1    8150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1500 8150 1600
+Connection ~ 8150 1600
+Wire Wire Line
+	8150 1500 8600 1500
+Wire Wire Line
+	8150 1600 8600 1600
+Text Label 8600 1700 2    50   ~ 0
+TERM_DISC
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise U2
+U 1 1 60640D2E
+P 8800 1500
+F 0 "U2" H 8850 2017 50  0000 C CNN
+F 1 "UCC5606" H 8850 1926 50  0000 C CNN
+F 2 "my library:SOIC127P600X175-16N" H 8800 1500 50  0001 C CNN
+F 3 "~" H 8800 1500 50  0001 C CNN
+	1    8800 1500
+	1    0    0    -1  
+$EndComp
+Text Label 9100 1700 0    50   ~ 0
+SCSI_TERMPWR
+Wire Wire Line
+	9700 1500 9700 1600
+Wire Wire Line
+	9100 1500 9700 1500
+Wire Wire Line
+	9100 1600 9700 1600
+Connection ~ 9700 1600
+Wire Wire Line
+	9700 1600 9700 1700
+Wire Wire Line
+	9850 1700 9700 1700
+Connection ~ 9700 1700
+Wire Wire Line
+	9700 1700 9700 1750
+Wire Wire Line
+	9100 1400 9850 1400
+$Comp
+L power:GND #PWR0116
+U 1 1 6065BBF7
+P 9700 2850
+F 0 "#PWR0116" H 9700 2600 50  0001 C CNN
+F 1 "GND" H 9705 2677 50  0000 C CNN
+F 2 "" H 9700 2850 50  0001 C CNN
+F 3 "" H 9700 2850 50  0001 C CNN
+	1    9700 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 6065BBFD
+P 8150 2700
+F 0 "#PWR0117" H 8150 2450 50  0001 C CNN
+F 1 "GND" H 8155 2527 50  0000 C CNN
+F 2 "" H 8150 2700 50  0001 C CNN
+F 3 "" H 8150 2700 50  0001 C CNN
+	1    8150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2600 8150 2700
+Connection ~ 8150 2700
+Wire Wire Line
+	8150 2600 8600 2600
+Wire Wire Line
+	8150 2700 8600 2700
+Text Label 8600 2800 2    50   ~ 0
+TERM_DISC
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise U3
+U 1 1 6065BC08
+P 8800 2600
+F 0 "U3" H 8850 3117 50  0000 C CNN
+F 1 "UCC5606" H 8850 3026 50  0000 C CNN
+F 2 "my library:SOIC127P600X175-16N" H 8800 2600 50  0001 C CNN
+F 3 "~" H 8800 2600 50  0001 C CNN
+	1    8800 2600
+	1    0    0    -1  
+$EndComp
+Text Label 9100 2800 0    50   ~ 0
+SCSI_TERMPWR
+Wire Wire Line
+	9700 2600 9700 2700
+Wire Wire Line
+	9100 2600 9700 2600
+Wire Wire Line
+	9100 2700 9700 2700
+Connection ~ 9700 2700
+Wire Wire Line
+	9700 2700 9700 2800
+Wire Wire Line
+	9850 2800 9700 2800
+Connection ~ 9700 2800
+Wire Wire Line
+	9700 2800 9700 2850
+Wire Wire Line
+	9100 2500 9850 2500
+Text Label 8600 1300 2    50   ~ 0
+SCSI_DB3
+Text Label 8600 1900 2    50   ~ 0
+SCSI_DBP
+Text Label 8600 1400 2    50   ~ 0
+SCSI_DB2
+Text Label 8600 2500 2    50   ~ 0
+SCSI_MSG
+Text Label 8600 2400 2    50   ~ 0
+SCSI_RST
+Text Label 9100 1900 0    50   ~ 0
+SCSI_BSY
+Text Label 9100 1300 0    50   ~ 0
+SCSI_DB6
+Text Label 8600 2900 2    50   ~ 0
+SCSI_REQ
+Text Label 8600 3000 2    50   ~ 0
+SCSI_I_O
+Text Label 8600 2300 2    50   ~ 0
+SCSI_ACK
+Text Label 9100 3000 0    50   ~ 0
+SCSI_DB1
+Text Label 8600 1200 2    50   ~ 0
+SCSI_DB4
+Text Label 9100 2300 0    50   ~ 0
+SCSI_SEL
+Text Label 9100 2400 0    50   ~ 0
+SCSI_C_D
+Text Label 9100 1800 0    50   ~ 0
+SCSI_DB7
+Text Label 9100 1200 0    50   ~ 0
+SCSI_DB5
+Text Label 9100 2900 0    50   ~ 0
+SCSI_DB0
+Text Label 7400 2450 2    50   ~ 0
+SCSI_DB1
+Text Label 8600 1800 2    50   ~ 0
+SCSI_ATN
+Text Label 5300 5350 2    50   ~ 0
+TERM_DISC
+$Comp
+L power:GND #PWR0118
+U 1 1 606D8850
+P 5700 5450
+F 0 "#PWR0118" H 5700 5200 50  0001 C CNN
+F 1 "GND" H 5705 5277 50  0000 C CNN
+F 2 "" H 5700 5450 50  0001 C CNN
+F 3 "" H 5700 5450 50  0001 C CNN
+	1    5700 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 60708B21
+P 5700 5100
+F 0 "#PWR0112" H 5700 4950 50  0001 C CNN
+F 1 "+5V" H 5715 5273 50  0000 C CNN
+F 2 "" H 5700 5100 50  0001 C CNN
+F 3 "" H 5700 5100 50  0001 C CNN
+	1    5700 5100
+	1    0    0    -1  
+$EndComp
+Text Label 1100 2800 2    50   ~ 0
+SCSI_REQ
+Text Label 1100 3000 2    50   ~ 0
+SCSI_I_O
+Text Label 1100 3200 2    50   ~ 0
+SCSI_ACK
+Text Label 1100 3400 2    50   ~ 0
+SCSI_GND
+Text Label 1100 3600 2    50   ~ 0
+SCSI_GND
+Text Label 1100 4000 2    50   ~ 0
+SCSI_DB7
+Text Label 1100 3800 2    50   ~ 0
+SCSI_DB5
+Text Label 1100 2900 2    50   ~ 0
+SCSI_MSG
+Text Label 1100 3100 2    50   ~ 0
+SCSI_RST
+Text Label 1100 3300 2    50   ~ 0
+SCSI_BSY
+Text Label 1100 3500 2    50   ~ 0
+SCSI_DB0
+Text Label 1100 3700 2    50   ~ 0
+SCSI_DB3
+Text Label 1100 3900 2    50   ~ 0
+SCSI_DB6
+Text Label 1600 3500 0    50   ~ 0
+SCSI_DB1
+Text Label 1600 3900 0    50   ~ 0
+SCSI_TERMPWR
+Text Label 1600 3700 0    50   ~ 0
+SCSI_DB4
+Text Label 1600 3300 0    50   ~ 0
+SCSI_SEL
+Text Label 1600 3100 0    50   ~ 0
+SCSI_ATN
+Text Label 1600 2900 0    50   ~ 0
+SCSI_C_D
+Text Label 1600 3200 0    50   ~ 0
+SCSI_GND
+Text Label 1600 3000 0    50   ~ 0
+SCSI_GND
+Text Label 1600 2800 0    50   ~ 0
+SCSI_GND
+Text Label 1600 3800 0    50   ~ 0
+SCSI_GND
+Text Label 1600 3400 0    50   ~ 0
+SCSI_DBP
+Text Label 1600 3600 0    50   ~ 0
+SCSI_DB2
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 6062F08F
+P 6700 3550
+F 0 "#PWR0110" H 6700 3400 50  0001 C CNN
+F 1 "+3.3V" H 6715 3723 50  0000 C CNN
+F 2 "" H 6700 3550 50  0001 C CNN
+F 3 "" H 6700 3550 50  0001 C CNN
+	1    6700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6065BBF1
+P 9850 2650
+F 0 "C2" H 9965 2696 50  0000 L CNN
+F 1 "4.7uF, 6.3v" H 9965 2605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 9888 2500 50  0001 C CNN
+F 3 "~" H 9850 2650 50  0001 C CNN
+	1    9850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60643B6E
+P 3300 900
+F 0 "C3" H 3415 946 50  0000 L CNN
+F 1 "4.7uF, 6.3v" H 3415 855 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 3338 750 50  0001 C CNN
+F 3 "~" H 3300 900 50  0001 C CNN
+	1    3300 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 750  3550 750 
+Wire Wire Line
+	3100 750  3300 750 
+Connection ~ 3300 750 
+Wire Wire Line
+	3050 1300 3300 1300
+Wire Wire Line
+	3300 1300 3300 1050
+Connection ~ 3300 1300
+Wire Wire Line
+	5700 5250 5700 5100
+Text Label 6100 3150 0    50   ~ 0
+DEBUG_TX
+Text Label 6100 3050 0    50   ~ 0
+DEBUG_RX
+$EndSCHEMATC
