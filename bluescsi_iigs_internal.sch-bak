@@ -19733,9 +19733,31 @@ U 1 1 6062FC1A
 P 7300 1300
 F 0 "SW1" H 7300 1585 50  0000 C CNN
 F 1 "SW_SPDT" H 7300 1494 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7300 1300 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 7300 1300 50  0001 C CNN
 F 3 "~" H 7300 1300 50  0001 C CNN
 	1    7300 1300
 	1    0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6089B5E7
+P 10050 3750
+F 0 "H?" H 10150 3796 50  0000 L CNN
+F 1 "MountingHole" H 10150 3705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10050 3750 50  0001 C CNN
+F 3 "~" H 10050 3750 50  0001 C CNN
+	1    10050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6089B5ED
+P 10050 3950
+F 0 "H?" H 10150 3996 50  0000 L CNN
+F 1 "MountingHole" H 10150 3905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 10050 3950 50  0001 C CNN
+F 3 "~" H 10050 3950 50  0001 C CNN
+	1    10050 3950
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
