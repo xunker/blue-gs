@@ -17,58 +17,8 @@ Text Notes 800  700  0    50   ~ 0
 In from Apple Rev. C SCSI card
 Text Notes 800  2550 0    50   ~ 0
 Out to DB-25 rear connector
-Text Label 1100 950  2    50   ~ 0
-SCSI_REQ
-Text Label 1100 1150 2    50   ~ 0
-SCSI_I_O
-Text Label 1100 1350 2    50   ~ 0
-SCSI_ACK
-Text Label 1100 1550 2    50   ~ 0
-SCSI_GND
-Text Label 1100 1750 2    50   ~ 0
-SCSI_GND
 NoConn ~ 1600 2150
 NoConn ~ 1600 4000
-Text Label 1600 1650 0    50   ~ 0
-SCSI_DB1
-Text Label 1600 2050 0    50   ~ 0
-SCSI_TERMPWR
-Text Label 1600 1850 0    50   ~ 0
-SCSI_DB4
-Text Label 1600 1450 0    50   ~ 0
-SCSI_SEL
-Text Label 1600 1250 0    50   ~ 0
-SCSI_ATN
-Text Label 1600 1050 0    50   ~ 0
-SCSI_C_D
-Text Label 1100 2150 2    50   ~ 0
-SCSI_DB7
-Text Label 1100 1950 2    50   ~ 0
-SCSI_DB5
-Text Label 1100 1050 2    50   ~ 0
-SCSI_MSG
-Text Label 1100 1250 2    50   ~ 0
-SCSI_RST
-Text Label 1100 1450 2    50   ~ 0
-SCSI_BSY
-Text Label 1600 1350 0    50   ~ 0
-SCSI_GND
-Text Label 1600 1150 0    50   ~ 0
-SCSI_GND
-Text Label 1600 950  0    50   ~ 0
-SCSI_GND
-Text Label 1600 1950 0    50   ~ 0
-SCSI_GND
-Text Label 1100 1650 2    50   ~ 0
-SCSI_DB0
-Text Label 1100 1850 2    50   ~ 0
-SCSI_DB3
-Text Label 1100 2050 2    50   ~ 0
-SCSI_DB6
-Text Label 1600 1550 0    50   ~ 0
-SCSI_DBP
-Text Label 1600 1750 0    50   ~ 0
-SCSI_DB2
 Text Label 3100 750  2    50   ~ 0
 SCSI_TERMPWR
 $Comp
@@ -280,17 +230,6 @@ F 1 "MountingHole" H 10150 3405 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3mm" H 10050 3450 50  0001 C CNN
 F 3 "~" H 10050 3450 50  0001 C CNN
 	1    10050 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPDT SW1
-U 1 1 6062FC1A
-P 7300 1300
-F 0 "SW1" H 7300 1585 50  0000 C CNN
-F 1 "SW_SPDT" H 7300 1494 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7300 1300 50  0001 C CNN
-F 3 "~" H 7300 1300 50  0001 C CNN
-	1    7300 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -19738,4 +19677,65 @@ Text Label 1600 3900 0    50   ~ 0
 SCSI_TERMPWR
 Text Label 1600 3500 0    50   ~ 0
 SCSI_DB1
+Text Label 1600 950  0    50   ~ 0
+SCSI_GND
+Text Label 1600 1950 0    50   ~ 0
+SCSI_GND
+Text Label 1600 1750 0    50   ~ 0
+SCSI_DB2
+Text Label 1600 1550 0    50   ~ 0
+SCSI_DBP
+Text Label 1600 1350 0    50   ~ 0
+SCSI_GND
+Text Label 1600 1150 0    50   ~ 0
+SCSI_GND
+Text Label 1600 1050 0    50   ~ 0
+SCSI_C_D
+Text Label 1600 1250 0    50   ~ 0
+SCSI_ATN
+Text Label 1600 1450 0    50   ~ 0
+SCSI_SEL
+Text Label 1600 1850 0    50   ~ 0
+SCSI_DB4
+Text Label 1600 2050 0    50   ~ 0
+SCSI_TERMPWR
+Text Label 1600 1650 0    50   ~ 0
+SCSI_DB1
+Text Label 1100 950  2    50   ~ 0
+SCSI_REQ
+Text Label 1100 1150 2    50   ~ 0
+SCSI_I_O
+Text Label 1100 1350 2    50   ~ 0
+SCSI_ACK
+Text Label 1100 1750 2    50   ~ 0
+SCSI_GND
+Text Label 1100 1550 2    50   ~ 0
+SCSI_GND
+Text Label 1100 2150 2    50   ~ 0
+SCSI_DB7
+Text Label 1100 1950 2    50   ~ 0
+SCSI_DB5
+Text Label 1100 1050 2    50   ~ 0
+SCSI_MSG
+Text Label 1100 1250 2    50   ~ 0
+SCSI_RST
+Text Label 1100 1450 2    50   ~ 0
+SCSI_BSY
+Text Label 1100 1650 2    50   ~ 0
+SCSI_DB0
+Text Label 1100 1850 2    50   ~ 0
+SCSI_DB3
+Text Label 1100 2050 2    50   ~ 0
+SCSI_DB6
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 6062FC1A
+P 7300 1300
+F 0 "SW1" H 7300 1585 50  0000 C CNN
+F 1 "SW_SPDT" H 7300 1494 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7300 1300 50  0001 C CNN
+F 3 "~" H 7300 1300 50  0001 C CNN
+	1    7300 1300
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
