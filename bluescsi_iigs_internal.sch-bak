@@ -19761,17 +19761,6 @@ F 3 "~" H 7150 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C5
-U 1 1 60863FC4
-P 8350 4700
-F 0 "C5" H 8468 4746 50  0000 L CNN
-F 1 "22uF" H 8468 4655 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 8388 4550 50  0001 C CNN
-F 3 "~" H 8350 4700 50  0001 C CNN
-	1    8350 4700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 60864BE9
 P 5650 4850
@@ -19815,17 +19804,6 @@ F 3 "" H 7750 5250 50  0001 C CNN
 	1    7750 5250
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 60867309
-P 8350 4900
-F 0 "#PWR0122" H 8350 4650 50  0001 C CNN
-F 1 "GND" H 8355 4727 50  0000 C CNN
-F 2 "" H 8350 4900 50  0001 C CNN
-F 3 "" H 8350 4900 50  0001 C CNN
-	1    8350 4900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 4950 5850 5000
 Text Label 5850 4850 0    50   ~ 0
@@ -19838,13 +19816,9 @@ Wire Wire Line
 	7150 4550 7450 4550
 Connection ~ 7150 4550
 Wire Wire Line
-	8050 4550 8350 4550
-Wire Wire Line
 	7150 4850 7150 4900
 Wire Wire Line
 	7750 4850 7750 4900
-Wire Wire Line
-	8350 4850 8350 4900
 $Comp
 L Device:D_Schottky D3
 U 1 1 6086E55B
@@ -19868,9 +19842,6 @@ F 3 "~" H 7750 5050 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	8350 4550 8600 4550
-Connection ~ 8350 4550
-Wire Wire Line
 	7750 5200 7750 5250
 $Comp
 L power:+5V #PWR0123
@@ -19885,4 +19856,6 @@ F 3 "" H 9000 4550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 4550 9000 4550
+Wire Wire Line
+	8050 4550 8600 4550
 $EndSCHEMATC
