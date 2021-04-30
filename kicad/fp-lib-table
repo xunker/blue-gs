@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Molex 105162-0001")(type KiCad)(uri "${KIPRJMOD}/footprints/Molex 105162-0001")(options "")(descr ""))
+)
