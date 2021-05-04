@@ -844,7 +844,7 @@ v1.2
 Text Notes 3300 850  0    50   ~ 0
 Termination ICs\n\nCompatible ICs:\nUC5603, UC5604, UC5605, UCC5606, and UCC5612
 Text Notes 6400 1300 0    50   ~ 0
-JP1, JP2 set the logic level for TERM_DISC signal\n\nUC5605, UCC5606, UCC5612:\nTermination disabled when TERM_DISC pulled LOW\n\nUC5603, UC5604:\nTermination disables with TERM_DISC pulled HIGH (to TERMPWR)
+JP1, JP2 set the logic level for TERM_DISC signal\n\nUC5605, UCC5606:\nTermination disabled when TERM_DISC pulled LOW\n\nUC5603, UC5604, UCC5612:\nTermination disables with TERM_DISC pulled HIGH (to TERMPWR)
 Text Notes 6950 2800 0    50   ~ 0
 Termination Enabled/Disabled Switch
 Text Label 3000 6700 0    50   ~ 0

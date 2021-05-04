@@ -410,7 +410,7 @@ Text Label 4400 2900 0    50   ~ 0
 SCSI_DB0
 Text Label 3900 1800 2    50   ~ 0
 SCSI_ATN
-Text Label 7000 2950 2    50   ~ 0
+Text Label 7450 3150 2    50   ~ 0
 TERM_DISC
 Text Label 1600 3100 2    50   ~ 0
 SCSI_REQ
@@ -583,12 +583,12 @@ SCSI_DB6
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 6062FC1A
-P 7200 2950
-F 0 "SW1" H 7200 3235 50  0000 C CNN
-F 1 "SW_SPDT" H 7200 3144 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 7200 2950 50  0001 C CNN
-F 3 "~" H 7200 2950 50  0001 C CNN
-	1    7200 2950
+P 7650 3150
+F 0 "SW1" H 7650 3435 50  0000 C CNN
+F 1 "SW_SPDT" H 7650 3344 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 7650 3150 50  0001 C CNN
+F 3 "~" H 7650 3150 50  0001 C CNN
+	1    7650 3150
 	1    0    0    1   
 $EndComp
 $Comp
@@ -758,84 +758,84 @@ Wire Wire Line
 $Comp
 L Jumper:Jumper_3_Open JP1
 U 1 1 608B8175
-P 7150 1500
-F 0 "JP1" H 7150 1724 50  0000 C CNN
-F 1 "Jumper_3_Open" H 7150 1633 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 7150 1500 50  0001 C CNN
-F 3 "~" H 7150 1500 50  0001 C CNN
-	1    7150 1500
+P 7600 1700
+F 0 "JP1" H 7600 1924 50  0000 C CNN
+F 1 "Jumper_3_Open" H 7600 1833 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 7600 1700 50  0001 C CNN
+F 3 "~" H 7600 1700 50  0001 C CNN
+	1    7600 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:Jumper_3_Open JP2
 U 1 1 608B8DEE
-P 7150 2000
-F 0 "JP2" H 7150 2224 50  0000 C CNN
-F 1 "Jumper_3_Open" H 7150 2133 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 7150 2000 50  0001 C CNN
-F 3 "~" H 7150 2000 50  0001 C CNN
-	1    7150 2000
+P 7600 2200
+F 0 "JP2" H 7600 2424 50  0000 C CNN
+F 1 "Jumper_3_Open" H 7600 2333 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 7600 2200 50  0001 C CNN
+F 3 "~" H 7600 2200 50  0001 C CNN
+	1    7600 2200
 	1    0    0    -1  
 $EndComp
-Text Label 7150 1650 0    50   ~ 0
+Text Label 7600 1850 0    50   ~ 0
 TERM_EN
-Text Label 7150 2150 0    50   ~ 0
+Text Label 7600 2350 0    50   ~ 0
 TERM_DIS
 $Comp
 L power:+5V #PWR0112
 U 1 1 608BB349
-P 6750 1500
-F 0 "#PWR0112" H 6750 1350 50  0001 C CNN
-F 1 "+5V" H 6765 1673 50  0000 C CNN
-F 2 "" H 6750 1500 50  0001 C CNN
-F 3 "" H 6750 1500 50  0001 C CNN
-	1    6750 1500
+P 7200 1700
+F 0 "#PWR0112" H 7200 1550 50  0001 C CNN
+F 1 "+5V" H 7215 1873 50  0000 C CNN
+F 2 "" H 7200 1700 50  0001 C CNN
+F 3 "" H 7200 1700 50  0001 C CNN
+	1    7200 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0118
 U 1 1 608BC12D
-P 6750 2000
-F 0 "#PWR0118" H 6750 1850 50  0001 C CNN
-F 1 "+5V" H 6765 2173 50  0000 C CNN
-F 2 "" H 6750 2000 50  0001 C CNN
-F 3 "" H 6750 2000 50  0001 C CNN
-	1    6750 2000
+P 7200 2200
+F 0 "#PWR0118" H 7200 2050 50  0001 C CNN
+F 1 "+5V" H 7215 2373 50  0000 C CNN
+F 2 "" H 7200 2200 50  0001 C CNN
+F 3 "" H 7200 2200 50  0001 C CNN
+	1    7200 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0122
 U 1 1 608BCCDB
-P 7600 1500
-F 0 "#PWR0122" H 7600 1250 50  0001 C CNN
-F 1 "GND" H 7605 1327 50  0000 C CNN
-F 2 "" H 7600 1500 50  0001 C CNN
-F 3 "" H 7600 1500 50  0001 C CNN
-	1    7600 1500
+P 8050 1700
+F 0 "#PWR0122" H 8050 1450 50  0001 C CNN
+F 1 "GND" H 8055 1527 50  0000 C CNN
+F 2 "" H 8050 1700 50  0001 C CNN
+F 3 "" H 8050 1700 50  0001 C CNN
+	1    8050 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0124
 U 1 1 608BD849
-P 7600 2000
-F 0 "#PWR0124" H 7600 1750 50  0001 C CNN
-F 1 "GND" H 7605 1827 50  0000 C CNN
-F 2 "" H 7600 2000 50  0001 C CNN
-F 3 "" H 7600 2000 50  0001 C CNN
-	1    7600 2000
+P 8050 2200
+F 0 "#PWR0124" H 8050 1950 50  0001 C CNN
+F 1 "GND" H 8055 2027 50  0000 C CNN
+F 2 "" H 8050 2200 50  0001 C CNN
+F 3 "" H 8050 2200 50  0001 C CNN
+	1    8050 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 1500 6900 1500
+	7200 1700 7350 1700
 Wire Wire Line
-	6750 2000 6900 2000
+	7200 2200 7350 2200
 Wire Wire Line
-	7400 2000 7600 2000
+	7850 2200 8050 2200
 Wire Wire Line
-	7400 1500 7600 1500
-Text Label 7400 2850 0    50   ~ 0
+	7850 1700 8050 1700
+Text Label 7850 3050 0    50   ~ 0
 TERM_EN
-Text Label 7400 3050 0    50   ~ 0
+Text Label 7850 3250 0    50   ~ 0
 TERM_DIS
 Text Notes 7350 7500 0    50   ~ 0
 Internal BlueSCSI for Apple IIgs and //e
@@ -843,9 +843,9 @@ Text Notes 10600 7650 0    50   ~ 0
 v1.2
 Text Notes 3300 850  0    50   ~ 0
 Termination ICs\n\nCompatible ICs:\nUC5603, UC5604, UC5605, UCC5606, and UCC5612
-Text Notes 5950 1100 0    50   ~ 0
+Text Notes 6400 1300 0    50   ~ 0
 JP1, JP2 set the logic level for TERM_DISC signal\n\nUC5605, UCC5606, UCC5612:\nTermination disabled when TERM_DISC pulled LOW\n\nUC5603, UC5604:\nTermination disables with TERM_DISC pulled HIGH (to TERMPWR)
-Text Notes 6500 2600 0    50   ~ 0
+Text Notes 6950 2800 0    50   ~ 0
 Termination Enabled/Disabled Switch
 Text Label 3000 6700 0    50   ~ 0
 DISK_ACT
@@ -899,21 +899,21 @@ Wire Notes Line
 Wire Notes Line
 	6100 7300 6100 6050
 Wire Notes Line
-	6500 2500 6500 3300
+	6950 2700 6950 3500
 Wire Notes Line
-	6500 3300 8000 3300
+	6950 3500 8450 3500
 Wire Notes Line
-	8000 3300 8000 2500
+	8450 3500 8450 2700
 Wire Notes Line
-	8000 2500 6500 2500
+	8450 2700 6950 2700
 Wire Notes Line
-	5900 500  5900 2300
+	6350 700  6350 2500
 Wire Notes Line
-	5900 2300 8550 2300
+	6350 2500 9000 2500
 Wire Notes Line
-	8550 2300 8550 500 
+	9000 2500 9000 700 
 Wire Notes Line
-	8550 500  5900 500 
+	9000 700  6350 700 
 Text Notes 7400 4200 0    50   ~ 0
 Auxilliary 12V power from IIgs fan connector in case TERMPWR is not available\n\nReverse-protected via D3.\nD4 boosts the output of regulator U4 to compensate for voltage drop of D3.
 Wire Notes Line
