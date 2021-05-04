@@ -36,7 +36,7 @@ https://github.com/xunker/blue-gs
 
 # About
 
-**Blue-GS** is the internal hard drive your Apple IIgs and //e always *craved*.
+*Blue-GS* is the internal hard drive your Apple IIgs and //e always *craved*.
 
 Using the [BlueSCSI](https://github.com/erichelgeson/BlueSCSI) SCSI drive emulator and your compatible SCSI card, you have a fully internal hard drive with accessible microSD slot while still keeping your DB-25 connector free for other peripherals.
 
@@ -56,11 +56,11 @@ TBA
 
 ## Bill-of-Materials
 
-TBA
+See [BOM.md](BOM.md).
 
 ### Compatible Termination ICs
 
-TBA
+See [TERMINATION.md](TERMINATION.md).
 
 ## Assembly Steps
 
