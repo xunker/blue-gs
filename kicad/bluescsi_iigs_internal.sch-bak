@@ -19,30 +19,6 @@ Text Notes 1300 2850 0    50   ~ 0
 Out to DB-25 rear connector
 NoConn ~ 2100 2450
 NoConn ~ 2100 4300
-Text Label 10100 1350 2    50   ~ 0
-SCSI_TERMPWR
-$Comp
-L power:+5V #PWR0101
-U 1 1 606198ED
-P 10550 1350
-F 0 "#PWR0101" H 10550 1200 50  0001 C CNN
-F 1 "+5V" H 10565 1523 50  0000 C CNN
-F 2 "" H 10550 1350 50  0001 C CNN
-F 3 "" H 10550 1350 50  0001 C CNN
-	1    10550 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 6061A0BF
-P 10300 1700
-F 0 "#PWR0102" H 10300 1450 50  0001 C CNN
-F 1 "GND" H 10305 1527 50  0000 C CNN
-F 2 "" H 10300 1700 50  0001 C CNN
-F 3 "" H 10300 1700 50  0001 C CNN
-	1    10300 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 6061A66B
@@ -54,8 +30,6 @@ F 3 "" H 2000 7200 50  0001 C CNN
 	1    2000 7200
 	1    0    0    -1  
 $EndComp
-Text Label 10050 1700 2    50   ~ 0
-SCSI_GND
 Wire Wire Line
 	2000 7100 2100 7100
 Wire Wire Line
@@ -298,7 +272,7 @@ F 3 "~" H 4100 1500 50  0001 C CNN
 	1    4100 1500
 	1    0    0    -1  
 $EndComp
-Text Label 4400 1700 0    50   ~ 0
+Text Label 3600 3700 0    50   ~ 0
 SCSI_TERMPWR
 Wire Wire Line
 	4400 1500 5000 1500
@@ -356,7 +330,7 @@ F 3 "~" H 4100 2600 50  0001 C CNN
 	1    4100 2600
 	1    0    0    -1  
 $EndComp
-Text Label 4400 2800 0    50   ~ 0
+Text Label 3600 3800 0    50   ~ 0
 SCSI_TERMPWR
 Wire Wire Line
 	5000 2600 5000 2700
@@ -453,24 +427,6 @@ F 3 "~" H 5150 2650 50  0001 C CNN
 	1    5150 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C3
-U 1 1 60643B6E
-P 10300 1500
-F 0 "C3" H 10415 1546 50  0000 L CNN
-F 1 "4.7uF, 6.3v" H 10415 1455 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 10338 1350 50  0001 C CNN
-F 3 "~" H 10300 1500 50  0001 C CNN
-	1    10300 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 1350 10550 1350
-Wire Wire Line
-	10100 1350 10300 1350
-Connection ~ 10300 1350
-Wire Wire Line
-	10050 1700 10300 1700
 Text Label 3000 6300 0    50   ~ 0
 DEBUG_TX
 Text Label 3000 6200 0    50   ~ 0
@@ -844,7 +800,7 @@ v1.2
 Text Notes 3300 850  0    50   ~ 0
 Termination ICs\n\nCompatible ICs:\nUC5603, UC5604, UC5605, UCC5606, and UCC5612
 Text Notes 6400 1300 0    50   ~ 0
-JP1, JP2 set the logic level for TERM_DISC signal\n\nUC5605, UCC5606, UCC5612:\nTermination disabled when TERM_DISC pulled LOW\n\nUC5603, UC5604:\nTermination disables with TERM_DISC pulled HIGH (to TERMPWR)
+JP1, JP2 set the logic level for TERM_DISC signal\n\nUC5605, UCC5606:\nTermination disabled when TERM_DISC pulled LOW\n\nUC5603, UC5604, UCC5612:\nTermination disables with TERM_DISC pulled HIGH (to TERMPWR)
 Text Notes 6950 2800 0    50   ~ 0
 Termination Enabled/Disabled Switch
 Text Label 3000 6700 0    50   ~ 0
@@ -950,21 +906,87 @@ Wire Notes Line
 	5800 3400 5800 500 
 Wire Notes Line
 	5800 500  3250 500 
-Connection ~ 10300 1700
-Wire Wire Line
-	10300 1700 10300 1650
-Text Notes 9450 1100 0    50   ~ 0
-TERMPWR Decoupling
-Text Notes 10450 1950 0    50   ~ 0
-C3: Tantalum
-Wire Notes Line
-	9400 1000 9400 2000
-Wire Notes Line
-	9400 2000 11000 2000
-Wire Notes Line
-	11000 2000 11000 1000
-Wire Notes Line
-	11000 1000 9400 1000
 Text Label 9650 4600 0    50   ~ 0
 REG_OUT
+Wire Notes Line
+	9150 1000 11000 1000
+Wire Notes Line
+	9150 2000 11000 2000
+Wire Notes Line
+	9150 1000 9150 2000
+Wire Notes Line
+	11000 2000 11000 1000
+Text Notes 10450 1950 0    50   ~ 0
+C3: Tantalum
+Text Notes 9200 1100 0    50   ~ 0
+TERMPWR Decoupling
+Wire Wire Line
+	10300 1700 10300 1650
+Connection ~ 10300 1700
+Wire Wire Line
+	10050 1700 10300 1700
+Connection ~ 10300 1350
+Wire Wire Line
+	10100 1350 10300 1350
+Wire Wire Line
+	10300 1350 10550 1350
+$Comp
+L Device:C C3
+U 1 1 60643B6E
+P 10300 1500
+F 0 "C3" H 10415 1546 50  0000 L CNN
+F 1 "4.7uF, 6.3v" H 10415 1455 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder" H 10338 1350 50  0001 C CNN
+F 3 "~" H 10300 1500 50  0001 C CNN
+	1    10300 1500
+	1    0    0    -1  
+$EndComp
+Text Label 10050 1700 2    50   ~ 0
+SCSI_GND
+$Comp
+L power:GND #PWR0102
+U 1 1 6061A0BF
+P 10300 1700
+F 0 "#PWR0102" H 10300 1450 50  0001 C CNN
+F 1 "GND" H 10305 1527 50  0000 C CNN
+F 2 "" H 10300 1700 50  0001 C CNN
+F 3 "" H 10300 1700 50  0001 C CNN
+	1    10300 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 606198ED
+P 10550 1350
+F 0 "#PWR0101" H 10550 1200 50  0001 C CNN
+F 1 "+5V" H 10565 1523 50  0000 C CNN
+F 2 "" H 10550 1350 50  0001 C CNN
+F 3 "" H 10550 1350 50  0001 C CNN
+	1    10550 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 1350 9800 1350
+$Comp
+L Device:Fuse F1
+U 1 1 6099AB77
+P 9950 1350
+F 0 "F1" V 9753 1350 50  0000 C CNN
+F 1 "Fuse" V 9844 1350 50  0000 C CNN
+F 2 "Fuse:Fuse_1210_3225Metric" V 9880 1350 50  0001 C CNN
+F 3 "~" H 9950 1350 50  0001 C CNN
+	1    9950 1350
+	0    1    1    0   
+$EndComp
+Text Label 9750 1350 2    50   ~ 0
+SCSI_TERMPWR
+NoConn ~ 2000 4900
+NoConn ~ 1400 5900
+NoConn ~ 1400 6000
+NoConn ~ 3000 6100
+NoConn ~ 3000 6400
+NoConn ~ 3000 6500
+NoConn ~ 3000 6600
+NoConn ~ 3000 5200
+NoConn ~ 3000 5500
 $EndSCHEMATC
