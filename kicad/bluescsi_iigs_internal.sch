@@ -161,28 +161,6 @@ Wire Wire Line
 NoConn ~ 6150 4300
 NoConn ~ 4850 4300
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 60629B83
-P 9050 5950
-F 0 "H1" H 9150 5996 50  0000 L CNN
-F 1 "MountingHole" H 9150 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 9050 5950 50  0001 C CNN
-F 3 "~" H 9050 5950 50  0001 C CNN
-	1    9050 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 6062A4C4
-P 9050 6150
-F 0 "H2" H 9150 6196 50  0000 L CNN
-F 1 "MountingHole" H 9150 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 9050 6150 50  0001 C CNN
-F 3 "~" H 9050 6150 50  0001 C CNN
-	1    9050 6150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D2
 U 1 1 60631033
 P 4700 7350
@@ -1065,6 +1043,50 @@ F 1 "GND" H 5105 6477 50  0000 C CNN
 F 2 "" H 5100 6650 50  0001 C CNN
 F 3 "" H 5100 6650 50  0001 C CNN
 	1    5100 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 609FCFD6
+P 8550 6100
+F 0 "#PWR0130" H 8550 5850 50  0001 C CNN
+F 1 "GND" H 8555 5927 50  0000 C CNN
+F 2 "" H 8550 6100 50  0001 C CNN
+F 3 "" H 8550 6100 50  0001 C CNN
+	1    8550 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 609FBA87
+P 7250 6100
+F 0 "#PWR0129" H 7250 5850 50  0001 C CNN
+F 1 "GND" H 7255 5927 50  0000 C CNN
+F 2 "" H 7250 6100 50  0001 C CNN
+F 3 "" H 7250 6100 50  0001 C CNN
+	1    7250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 M2
+U 1 1 609E648B
+P 8750 6100
+F 0 "M2" H 8830 6142 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 8830 6051 50  0000 L CNN
+F 2 "my library:keystone-7774" H 8750 6100 50  0001 C CNN
+F 3 "~" H 8750 6100 50  0001 C CNN
+	1    8750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 M1
+U 1 1 609E5C80
+P 7450 6100
+F 0 "M1" H 7530 6142 50  0000 L CNN
+F 1 "Screw_Terminal_01x01" H 7530 6051 50  0000 L CNN
+F 2 "my library:keystone-7774" H 7450 6100 50  0001 C CNN
+F 3 "~" H 7450 6100 50  0001 C CNN
+	1    7450 6100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
