@@ -124,6 +124,8 @@ The "Blue Pill" footprint was originally created by [Yet-Another-Average-Joe](ht
 
 Symbol and footprint for Molex 105162-0001 MicroSD slot created by [SnapEDA user HMantz](https://www.snapeda.com/parts/105162-0001/Molex/view-part/).
 
+External LED driver circuit credit to @akuker on Open Retro SCSI Discord.
+
 # License
 
 See [LICENSE.md](LICENSE.md).
