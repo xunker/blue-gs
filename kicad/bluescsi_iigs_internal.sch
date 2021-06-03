@@ -522,17 +522,6 @@ F 3 "~" H 7650 3150 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Regulator_Linear:AMS1117-5.0 U4
-U 1 1 608623C0
-P 9300 4600
-F 0 "U4" H 9300 4842 50  0000 C CNN
-F 1 "AMS1117-5.0" H 9300 4751 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9300 4800 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 9400 4350 50  0001 C CNN
-	1    9300 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C4
 U 1 1 608634DB
 P 8700 4750
@@ -602,28 +591,6 @@ Wire Wire Line
 	8700 4900 8700 4950
 Wire Wire Line
 	9300 4900 9300 4950
-$Comp
-L Device:D_Schottky D3
-U 1 1 6086E55B
-P 10300 4600
-F 0 "D3" H 10300 4383 50  0000 C CNN
-F 1 "1N5817,1N5817,CUS08F30-H3F" H 10300 4474 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 10300 4600 50  0001 C CNN
-F 3 "~" H 10300 4600 50  0001 C CNN
-	1    10300 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_Schottky D4
-U 1 1 6086EF1B
-P 9300 5100
-F 0 "D4" V 9346 5180 50  0000 L CNN
-F 1 "1N5817,CUS08F30-H3F" V 9255 5180 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 9300 5100 50  0001 C CNN
-F 3 "~" H 9300 5100 50  0001 C CNN
-	1    9300 5100
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	9300 5250 9300 5300
 $Comp
@@ -823,8 +790,6 @@ Wire Notes Line
 	9000 2500 9000 700 
 Wire Notes Line
 	9000 700  6350 700 
-Text Notes 7400 4200 0    50   ~ 0
-Auxilliary 12V power from IIgs fan connector in case TERMPWR is not available\n\nReverse-protected via D3.\nD4 boosts the output of regulator U4 to compensate for voltage drop of D3.
 Wire Notes Line
 	6950 3750 6950 5650
 Wire Notes Line
@@ -1087,6 +1052,41 @@ F 1 "Screw_Terminal_01x01" H 7530 6051 50  0000 L CNN
 F 2 "my library:keystone-7774" H 7450 6100 50  0001 C CNN
 F 3 "~" H 7450 6100 50  0001 C CNN
 	1    7450 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4001 D3
+U 1 1 6086E55B
+P 10300 4600
+F 0 "D3" H 10300 4383 50  0000 C CNN
+F 1 "1N4001" H 10300 4474 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 10300 4600 50  0001 C CNN
+F 3 "~" H 10300 4600 50  0001 C CNN
+	1    10300 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4001 D4
+U 1 1 6086EF1B
+P 9300 5100
+F 0 "D4" V 9346 5180 50  0000 L CNN
+F 1 "1N4001" V 9255 5180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 9300 5100 50  0001 C CNN
+F 3 "~" H 9300 5100 50  0001 C CNN
+	1    9300 5100
+	0    1    -1   0   
+$EndComp
+Text Notes 7400 4200 0    50   ~ 0
+Auxilliary 12V power from IIgs fan connector in case TERMPWR is not available\n\nReverse-protected via D3.\nD4 boosts the output of regulator U4 to compensate for voltage drop of D3.\nHeat-sink recommended.
+$Comp
+L Regulator_Linear:L7805 U4
+U 1 1 608623C0
+P 9300 4600
+F 0 "U4" H 9300 4842 50  0000 C CNN
+F 1 "MC7805CT-BP" H 9300 4751 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9300 4800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/258/MC7805CT(TO-220)-E-1626349.pdf" H 9400 4350 50  0001 C CNN
+	1    9300 4600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
