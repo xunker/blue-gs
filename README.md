@@ -10,28 +10,11 @@ https://github.com/xunker/blue-gs
 - [Features](#features)
 - [Compatible SCSI cards](#compatible-scsi-cards)
 - [Performance](#performance)
-- [Board](#board)
 - [Assembly](#assembly)
-  - [Bill-of-Materials](#bill-of-materials)
-    - [Compatible Termination ICs](#compatible-termination-ics)
-  - [Assembly Steps](#assembly-steps)
-    - [MicroSD Slot](#microsd-slot)
-    - [Switch](#switch)
-    - [Set Jumpers](#set-jumpers)
-    - [LEDs and Resistors](#leds-and-resistors)
-    - [Termination ICs and Capacitors](#termination-ics-and-capacitors)
-    - [Auxiliary +12V input regulator, diodes, and capacitor](#auxiliary-12v-input-regulator-diodes-and-capacitor)
-    - [SCSI Card connections](#scsi-card-connections)
-    - [Blue Pill Module](#blue-pill-module)
 - [Installation](#installation)
-  - [Bracket](#bracket)
-  - [Cables](#cables)
-  - [Auxiliary +12V connection](#auxiliary-12v-connection)
-  - [Slot Attachment](#slot-attachment)
-- [Usage](#usage)
+- [Board Pictures](#board-pictures)
 - [Schematics](#schematics)
 - [EDA/Kicad Files](#edakicad-files)
-- [Version Changes](#version-changes)
 - [Credits](#credits)
 - [License](#license)
 
@@ -83,71 +66,25 @@ If you have an SCSI card with an IDC-26/DB-25 connector that has not been tested
 
 Using [BenchmarkD](https://www.brutaldeluxe.fr/products/apple2gs/benchmarked.html) with Apple IIgs (ROM 1, "Fast" speed), GS-RAM Plus w/ 2MB, GGLabs A2SCSI card.
 
-
 * Read
   * File: 52 KB/s
   * Block-by-block: 36 KB/s
   * With 64K buffer: 79 KB/s
 * Write (File): 37 KB/s
 
-# Board
+# Assembly
+
+If you purchased BlueGS as a self-assemble kit or are using your own PCBs, please follow the instructions in the "[assembly](assembly/)" directory.
+
+If your BlueGS was purchased fully-assembled, please move on to the "[Installation](installation/)" section.
+# Installation
+
+Installation guides can be found in the "[installation](installation/)" directory.
+# Board Pictures
 
 ![Rendering of front of board v1.2](images/bluescsi_iigs_internal_v1.2_front.jpg)
 
 ![Rendering of back of board v1.2](images/bluescsi_iigs_internal_v1.2_back.jpg)
-
-TBA
-
-# Assembly
-
-## Bill-of-Materials
-
-See [BOM.md](BOM.md).
-
-### Compatible Termination ICs
-
-See [TERMINATION.md](TERMINATION.md).
-
-## Assembly Steps
-
-### MicroSD Slot
-
-### Switch
-
-### Set Jumpers
-
-### LEDs and Resistors
-
-### Termination ICs and Capacitors
-
-### Auxiliary +12V input regulator, diodes, and capacitor
-
-### SCSI Card connections
-
-### Blue Pill Module
-
-# Installation
-
-## Bracket
-
-TBA
-
-## Cables
-
-TBA
-
-## Auxiliary +12V connection
-
-TBA
-
-## Slot Attachment
-
-TBA
-
-# Usage
-
-TBA
-
 # Schematics
 
 [V1.2 Schematic](schematics/schematic_v1.2.pdf)
@@ -157,10 +94,6 @@ TBA
 # EDA/Kicad Files
 
 Kicad of current design can be found in [kicad](kicad/) directory.
-
-# Version Changes
-
-See [CHANGES.md](CHANGES.md).
 
 # Credits
 
