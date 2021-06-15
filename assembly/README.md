@@ -4,9 +4,8 @@ https://github.com/xunker/blue-gs/assembly/README.md
 
 <!-- TOC -->
 
-- [BlueGS v1.2 Assembly Guide](#bluegs-v12-assembly-guide)
-- [Deprecation Note](#deprecation-note)
-- [Components](#components)
+- [BlueGS Assembly Guide](#bluegs-assembly-guide)
+- [V1.3 Assembly Guide](#v13-assembly-guide)
 
 <!-- /TOC -->
 # V1.3 Assembly Guide
