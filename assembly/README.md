@@ -1,7 +1,5 @@
 # BlueGS Assembly Guide
 
-https://github.com/xunker/blue-gs/assembly/README.md
-
 <!-- TOC -->
 
 - [BlueGS Assembly Guide](#bluegs-assembly-guide)

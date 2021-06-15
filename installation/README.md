@@ -1,7 +1,5 @@
 # BlueGS Installation Guide
 
-https://github.com/xunker/blue-gs/assembly/README.md
-
 <!-- TOC -->
 
 - [BlueGS Installation Guide](#bluegs-installation-guide)
@@ -16,7 +14,7 @@ https://github.com/xunker/blue-gs/assembly/README.md
   - [Install BlueGS in rear slot](#install-bluegs-in-rear-slot)
   - [Reinstall DB-25 connector in rear slot](#reinstall-db-25-connector-in-rear-slot)
   - [Reinstall SCSI card and close computer case](#reinstall-scsi-card-and-close-computer-case)
-  - [Insert MicroSD card](#insert-microsd-card)
+  - [Insert MicroSD card, check termination](#insert-microsd-card-check-termination)
   - [Power on and enjoy!](#power-on-and-enjoy)
 
 <!-- /TOC -->
