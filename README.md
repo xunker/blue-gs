@@ -47,6 +47,9 @@ BlueGS connects between your SCSI card and its external DB-25 connector to give 
 * TI/Unitrode termination ICs instead of passive termination, reduces power consumption by over 2/3rds
 * Connection for external drive activity LED
 
+[![Annotated picture of front of BlueGS v1.2](images/bluegs_v1.2_board_front_annotated_thumb.jpg)](images/bluegs_v1.2_board_front_annotated.jpg)
+[![Annotated picture of rear of BlueGS v1.2](images/bluegs_v1.2_board_rear_annotated_thumb.jpg)](images/bluegs_v1.2_board_rear_annotated.jpg)
+
 # Compatible SCSI cards
 
 Tested:
