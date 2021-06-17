@@ -735,9 +735,9 @@ TERM_EN
 Text Label 7850 3250 0    50   ~ 0
 TERM_DIS
 Text Notes 7350 7500 0    50   ~ 0
-Internal BlueSCSI for Apple IIgs and //e
+BlueGS: Internal BlueSCSI for Apple IIgs and //e
 Text Notes 10600 7650 0    50   ~ 0
-v1.2
+v1.3 (non-final)
 Text Notes 3300 850  0    50   ~ 0
 Termination ICs\n\nCompatible ICs:\nUC5603, UC5604, UC5605, UCC5606, UCC5612, UCC5614
 Text Notes 6400 1300 0    50   ~ 0
@@ -759,7 +759,7 @@ F 3 "~" H 5850 5800 50  0001 C CNN
 	1    5850 5800
 	0    1    1    0   
 $EndComp
-Text Notes 4550 5500 0    50   ~ 0
+Text Notes 4400 5450 0    50   ~ 0
 Disk Activity LED
 Wire Notes Line
 	6950 2700 6950 3500
@@ -1084,4 +1084,18 @@ F 3 "" H 4900 5700 50  0001 C CNN
 	1    4900 5700
 	1    0    0    -1  
 $EndComp
+Text Notes 550  650  0    100  ~ 0
+BlueGS
+Text Notes 600  750  0    50   ~ 0
+https://github.com/xunker/blue-gs
+Text Notes 7100 5950 0    50   ~ 0
+Mounting screws: Keystone 7774
+Wire Notes Line
+	7050 5850 7050 6350
+Wire Notes Line
+	7050 6350 9850 6350
+Wire Notes Line
+	9850 6350 9850 5850
+Wire Notes Line
+	9850 5850 7050 5850
 $EndSCHEMATC

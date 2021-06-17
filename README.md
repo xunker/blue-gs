@@ -12,9 +12,8 @@ https://github.com/xunker/blue-gs
 - [Performance](#performance)
 - [Assembly](#assembly)
 - [Installation](#installation)
-- [Board Pictures](#board-pictures)
 - [Schematics](#schematics)
-- [EDA/Kicad Files](#edakicad-files)
+- [EDA/Kicad and Gerber Files](#edakicad-and-gerber-files)
 - [Credits](#credits)
 - [License](#license)
 
@@ -83,20 +82,19 @@ If your BlueGS was purchased fully-assembled, please move on to the "[Installati
 # Installation
 
 Installation guides can be found in the "[installation](installation/)" directory.
-# Board Pictures
-
-![Rendering of front of board v1.2](images/bluescsi_iigs_internal_v1.2_front.jpg)
-
-![Rendering of back of board v1.2](images/bluescsi_iigs_internal_v1.2_back.jpg)
 # Schematics
+
+[V1.3 Schematic](schematics/schematic_v1.3.pdf) (**non-final**, subject to change)
 
 [V1.2 Schematic](schematics/schematic_v1.2.pdf)
 
 [V1.1 Schematic](schematics/schematic_v1.1.pdf)
 
-# EDA/Kicad Files
+# EDA/Kicad and Gerber Files
 
 Kicad of current design can be found in [kicad](kicad/) directory.
+
+Gerber files for v1.2 can be found in the [gerbers/v1.2](gerbers/v1.2) directory. **Note:** v1.2 has bugs and it not recommended for general use. V1.3 will be available shortly which will address these bugs.
 
 # Credits
 
