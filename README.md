@@ -9,6 +9,7 @@ https://github.com/xunker/blue-gs
 - [How it works](#how-it-works)
 - [Features](#features)
 - [Compatible SCSI cards](#compatible-scsi-cards)
+  - [How do I know if my card provides "termination power"? What if it doesn't?](#how-do-i-know-if-my-card-provides-termination-power-what-if-it-doesnt)
 - [Performance](#performance)
 - [Assembly](#assembly)
 - [Installation](#installation)
@@ -63,6 +64,10 @@ Unknown, but likely compatible:
 * Any SCSI card that uses has the same IDC-26/DB-25 pinout as the Apple Rev C SCSI
 
 If you have an SCSI card with an IDC-26/DB-25 connector that has not been tested and would be willing to test your card with BlueGS, please [contact us](https://github.com/xunker/blue-gs/issues) to arrange to have a test unit sent to you.
+
+## How do I know if my card provides "termination power"? What if it doesn't?
+
+Running BlueGS from "termination power" makes installation much easier, but not all SCSI cards have it. For more details, please check out the notes on [Powering BlueGS](POWERING_BLUE-GS.md).
 
 # Performance
 
