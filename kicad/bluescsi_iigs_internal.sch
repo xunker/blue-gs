@@ -13,40 +13,38 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 1300 1000 0    50   ~ 0
-In from Apple Rev. C SCSI card
-Text Notes 1300 2850 0    50   ~ 0
-Out to DB-25 rear connector
+Text Notes 1050 3250 1    50   ~ 0
+Input from cards with IDC-26 connector,\nand output to rear DB-25 connector
 NoConn ~ 2100 2450
-NoConn ~ 2100 4300
+NoConn ~ 2100 4050
 $Comp
 L power:GND #PWR0103
 U 1 1 6061A66B
-P 1550 7200
-F 0 "#PWR0103" H 1550 6950 50  0001 C CNN
-F 1 "GND" H 1555 7027 50  0000 C CNN
-F 2 "" H 1550 7200 50  0001 C CNN
-F 3 "" H 1550 7200 50  0001 C CNN
-	1    1550 7200
+P 3350 7300
+F 0 "#PWR0103" H 3350 7050 50  0001 C CNN
+F 1 "GND" H 3355 7127 50  0000 C CNN
+F 2 "" H 3350 7300 50  0001 C CNN
+F 3 "" H 3350 7300 50  0001 C CNN
+	1    3350 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 7100 1650 7100
+	3350 7200 3450 7200
 Wire Wire Line
-	1650 7100 1750 7100
-Connection ~ 1650 7100
+	3450 7200 3550 7200
+Connection ~ 3450 7200
 Wire Wire Line
-	1550 7100 1550 7200
-Connection ~ 1550 7100
+	3350 7200 3350 7300
+Connection ~ 3350 7200
 $Comp
 L power:+5V #PWR0104
 U 1 1 6061C92A
-P 1650 4900
-F 0 "#PWR0104" H 1650 4750 50  0001 C CNN
-F 1 "+5V" H 1665 5073 50  0000 C CNN
-F 2 "" H 1650 4900 50  0001 C CNN
-F 3 "" H 1650 4900 50  0001 C CNN
-	1    1650 4900
+P 3450 5000
+F 0 "#PWR0104" H 3450 4850 50  0001 C CNN
+F 1 "+5V" H 3465 5173 50  0000 C CNN
+F 2 "" H 3450 5000 50  0001 C CNN
+F 3 "" H 3450 5000 50  0001 C CNN
+	1    3450 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -63,79 +61,79 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0106
 U 1 1 6061D830
-P 1750 4900
-F 0 "#PWR0106" H 1750 4750 50  0001 C CNN
-F 1 "+3.3V" H 1765 5073 50  0000 C CNN
-F 2 "" H 1750 4900 50  0001 C CNN
-F 3 "" H 1750 4900 50  0001 C CNN
-	1    1750 4900
+P 3550 5000
+F 0 "#PWR0106" H 3550 4850 50  0001 C CNN
+F 1 "+3.3V" H 3565 5173 50  0000 C CNN
+F 2 "" H 3550 5000 50  0001 C CNN
+F 3 "" H 3550 5000 50  0001 C CNN
+	1    3550 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR0107
 U 1 1 6061DD87
-P 1850 4900
-F 0 "#PWR0107" H 1850 4750 50  0001 C CNN
-F 1 "+3.3V" H 1865 5073 50  0000 C CNN
-F 2 "" H 1850 4900 50  0001 C CNN
-F 3 "" H 1850 4900 50  0001 C CNN
-	1    1850 4900
+P 3650 5000
+F 0 "#PWR0107" H 3650 4850 50  0001 C CNN
+F 1 "+3.3V" H 3665 5173 50  0000 C CNN
+F 2 "" H 3650 5000 50  0001 C CNN
+F 3 "" H 3650 5000 50  0001 C CNN
+	1    3650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 950  6200 2    50   ~ 0
+Text Label 2750 6300 2    50   ~ 0
 SCSI_MSG
-Text Label 950  6100 2    50   ~ 0
+Text Label 2750 6200 2    50   ~ 0
 SCSI_RST
-Text Label 950  5700 2    50   ~ 0
+Text Label 2750 5800 2    50   ~ 0
 SCSI_BSY
-Text Label 2550 5300 0    50   ~ 0
+Text Label 4350 5400 0    50   ~ 0
 SCSI_DB3
-Text Label 950  5400 2    50   ~ 0
+Text Label 2750 5500 2    50   ~ 0
 SCSI_DB6
-Text Label 2550 5600 0    50   ~ 0
+Text Label 4350 5700 0    50   ~ 0
 SCSI_DBP
-Text Label 2550 5400 0    50   ~ 0
+Text Label 4350 5500 0    50   ~ 0
 SCSI_DB2
-Text Label 950  6500 2    50   ~ 0
+Text Label 2750 6600 2    50   ~ 0
 SCSI_REQ
-Text Label 950  6600 2    50   ~ 0
+Text Label 2750 6700 2    50   ~ 0
 SCSI_I_O
-Text Label 950  5800 2    50   ~ 0
+Text Label 2750 5900 2    50   ~ 0
 SCSI_ACK
-Text Label 950  6800 2    50   ~ 0
+Text Label 2750 6900 2    50   ~ 0
 SCSI_DB1
-Text Label 950  5200 2    50   ~ 0
+Text Label 2750 5300 2    50   ~ 0
 SCSI_DB4
-Text Label 950  6300 2    50   ~ 0
+Text Label 2750 6400 2    50   ~ 0
 SCSI_SEL
-Text Label 950  5600 2    50   ~ 0
+Text Label 2750 5700 2    50   ~ 0
 SCSI_ATN
-Text Label 950  6400 2    50   ~ 0
+Text Label 2750 6500 2    50   ~ 0
 SCSI_C_D
-Text Label 950  5500 2    50   ~ 0
+Text Label 2750 5600 2    50   ~ 0
 SCSI_DB7
-Text Label 950  5300 2    50   ~ 0
+Text Label 2750 5400 2    50   ~ 0
 SCSI_DB5
-Text Label 950  6700 2    50   ~ 0
+Text Label 2750 6800 2    50   ~ 0
 SCSI_DB0
 $Comp
 L MCU_ST_STM32F1:YAAJ_BluePill U1
 U 1 1 605FE9FD
-P 1750 6000
-F 0 "U1" H 1750 4669 50  0000 C CNN
-F 1 "YAAJ_BluePill" H 1750 4578 50  0000 C CNN
-F 2 "my library:YAAJ_BluePill_2" V 1675 6950 50  0001 C CNN
-F 3 "" V 1675 6950 50  0001 C CNN
-	1    1750 6000
+P 3550 6100
+F 0 "U1" H 3550 4769 50  0000 C CNN
+F 1 "YAAJ_BluePill" H 3550 4678 50  0000 C CNN
+F 2 "my library:YAAJ_BluePill_2" V 3475 7050 50  0001 C CNN
+F 3 "" V 3475 7050 50  0001 C CNN
+	1    3550 6100
 	1    0    0    -1  
 $EndComp
-Text Label 2550 6000 0    50   ~ 0
+Text Label 4350 6100 0    50   ~ 0
 SD_CS
-Text Label 2550 5900 0    50   ~ 0
+Text Label 4350 6000 0    50   ~ 0
 SD_CSK
-Text Label 2550 5800 0    50   ~ 0
+Text Label 4350 5900 0    50   ~ 0
 SD_MISO
-Text Label 2550 5700 0    50   ~ 0
+Text Label 4350 5800 0    50   ~ 0
 SD_MOSI
 $Comp
 L power:GND #PWR0108
@@ -360,35 +358,35 @@ Text Label 3900 1800 2    50   ~ 0
 SCSI_ATN
 Text Label 10050 3150 2    50   ~ 0
 TERM_DISC
-Text Label 1600 3100 2    50   ~ 0
+Text Label 1600 2850 2    50   ~ 0
 SCSI_REQ
-Text Label 1600 3300 2    50   ~ 0
+Text Label 1600 3050 2    50   ~ 0
 SCSI_I_O
-Text Label 1600 3500 2    50   ~ 0
+Text Label 1600 3250 2    50   ~ 0
 SCSI_ACK
-Text Label 1600 3900 2    50   ~ 0
+Text Label 1600 3650 2    50   ~ 0
 SCSI_GND
-Text Label 1600 3700 2    50   ~ 0
+Text Label 1600 3450 2    50   ~ 0
 SCSI_GND
-Text Label 1600 4300 2    50   ~ 0
+Text Label 1600 4050 2    50   ~ 0
 SCSI_DB7
-Text Label 1600 4100 2    50   ~ 0
+Text Label 1600 3850 2    50   ~ 0
 SCSI_DB5
-Text Label 1600 3200 2    50   ~ 0
+Text Label 1600 2950 2    50   ~ 0
 SCSI_MSG
-Text Label 1600 3400 2    50   ~ 0
+Text Label 1600 3150 2    50   ~ 0
 SCSI_RST
-Text Label 1600 3600 2    50   ~ 0
+Text Label 1600 3350 2    50   ~ 0
 SCSI_BSY
-Text Label 1600 3800 2    50   ~ 0
+Text Label 1600 3550 2    50   ~ 0
 SCSI_DB0
-Text Label 1600 4000 2    50   ~ 0
+Text Label 1600 3750 2    50   ~ 0
 SCSI_DB3
-Text Label 1600 4200 2    50   ~ 0
+Text Label 1600 3950 2    50   ~ 0
 SCSI_DB6
-Text Label 2100 3100 0    50   ~ 0
+Text Label 2100 2850 0    50   ~ 0
 SCSI_GND
-Text Label 2100 4100 0    50   ~ 0
+Text Label 2100 3850 0    50   ~ 0
 SCSI_GND
 $Comp
 L Device:C C2
@@ -401,9 +399,9 @@ F 3 "~" H 5150 2650 50  0001 C CNN
 	1    5150 2650
 	1    0    0    -1  
 $EndComp
-Text Label 2550 6300 0    50   ~ 0
+Text Label 4350 6400 0    50   ~ 0
 DEBUG_TX
-Text Label 2550 6200 0    50   ~ 0
+Text Label 4350 6300 0    50   ~ 0
 DEBUG_RX
 Wire Wire Line
 	5000 1500 5000 1600
@@ -421,12 +419,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x13_Odd_Even J2
 U 1 1 6060317B
-P 1800 3700
-F 0 "J2" H 1850 4517 50  0000 C CNN
-F 1 "Conn_02x13_Odd_Even" H 1850 4426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 1800 3700 50  0001 C CNN
-F 3 "~" H 1800 3700 50  0001 C CNN
-	1    1800 3700
+P 1800 3450
+F 0 "J2" H 1850 4267 50  0000 C CNN
+F 1 "Conn_02x13_Odd_Even" H 1850 4176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical" H 1800 3450 50  0001 C CNN
+F 3 "~" H 1800 3450 50  0001 C CNN
+	1    1800 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -440,25 +438,25 @@ F 3 "~" H 1800 1850 50  0001 C CNN
 	1    1800 1850
 	1    0    0    -1  
 $EndComp
-Text Label 2100 3900 0    50   ~ 0
+Text Label 2100 3650 0    50   ~ 0
 SCSI_DB2
-Text Label 2100 3700 0    50   ~ 0
+Text Label 2100 3450 0    50   ~ 0
 SCSI_DBP
-Text Label 2100 3500 0    50   ~ 0
+Text Label 2100 3250 0    50   ~ 0
 SCSI_GND
-Text Label 2100 3300 0    50   ~ 0
+Text Label 2100 3050 0    50   ~ 0
 SCSI_GND
-Text Label 2100 3200 0    50   ~ 0
+Text Label 2100 2950 0    50   ~ 0
 SCSI_C_D
-Text Label 2100 3400 0    50   ~ 0
+Text Label 2100 3150 0    50   ~ 0
 SCSI_ATN
-Text Label 2100 3600 0    50   ~ 0
+Text Label 2100 3350 0    50   ~ 0
 SCSI_SEL
-Text Label 2100 4000 0    50   ~ 0
+Text Label 2100 3750 0    50   ~ 0
 SCSI_DB4
-Text Label 2100 4200 0    50   ~ 0
+Text Label 2100 3950 0    50   ~ 0
 SCSI_TERMPWR
-Text Label 2100 3800 0    50   ~ 0
+Text Label 2100 3550 0    50   ~ 0
 SCSI_DB1
 Text Label 2100 1250 0    50   ~ 0
 SCSI_GND
@@ -744,7 +742,7 @@ Text Notes 6400 1300 0    50   ~ 0
 JP1, JP2 set the logic level for TERM_DISC signal\n\nUC5605, UCC5606:\nTermination disabled when TERM_DISC pulled LOW\n\nUC5603, UC5604, UCC5612, UCC5614:\nTermination disabled with TERM_DISC pulled HIGH (to TERMPWR)
 Text Notes 9550 2800 0    50   ~ 0
 Termination Enabled/Disabled Switch
-Text Label 2550 6700 0    50   ~ 0
+Text Label 4350 6800 0    50   ~ 0
 DISK_ACT
 Wire Wire Line
 	8100 3150 8200 3150
@@ -871,15 +869,15 @@ F 3 "~" H 9950 1350 50  0001 C CNN
 $EndComp
 Text Label 9750 1350 2    50   ~ 0
 SCSI_TERMPWR
-NoConn ~ 1550 4900
-NoConn ~ 950  5900
-NoConn ~ 950  6000
-NoConn ~ 2550 6100
-NoConn ~ 2550 6400
-NoConn ~ 2550 6500
-NoConn ~ 2550 6600
-NoConn ~ 2550 5200
-NoConn ~ 2550 5500
+NoConn ~ 3350 5000
+NoConn ~ 2750 6000
+NoConn ~ 2750 6100
+NoConn ~ 4350 6200
+NoConn ~ 4350 6500
+NoConn ~ 4350 6600
+NoConn ~ 4350 6700
+NoConn ~ 4350 5300
+NoConn ~ 4350 5600
 Wire Notes Line
 	11000 2000 11000 1000
 $Comp
@@ -1099,64 +1097,66 @@ Wire Notes Line
 Wire Notes Line
 	9850 5850 7050 5850
 $Comp
-L Connector:DB25_Male J?
+L Connector:DB25_Male J6
 U 1 1 60D17137
-P 4550 6000
-F 0 "J?" H 4468 4508 50  0000 C CNN
-F 1 "DB25_Male" H 4468 4599 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-25_Male_EdgeMount_P2.77mm" H 4550 6000 50  0001 C CNN
-F 3 " ~" H 4550 6000 50  0001 C CNN
-	1    4550 6000
+P 1550 6300
+F 0 "J6" H 1468 4808 50  0000 C CNN
+F 1 "DB25_Male" H 1468 4899 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-25_Male_EdgeMount_P2.77mm" H 1550 6300 50  0001 C CNN
+F 3 " ~" H 1550 6300 50  0001 C CNN
+	1    1550 6300
 	1    0    0    1   
 $EndComp
-Text Label 4250 4800 2    50   ~ 0
+Text Label 1250 5100 2    50   ~ 0
 SCSI_REQ
-Text Label 4250 5200 2    50   ~ 0
+Text Label 1250 5500 2    50   ~ 0
 SCSI_I_O
-Text Label 4250 5600 2    50   ~ 0
+Text Label 1250 5900 2    50   ~ 0
 SCSI_ACK
-Text Label 4250 5300 2    50   ~ 0
+Text Label 1250 5600 2    50   ~ 0
 SCSI_GND
-Text Label 4250 6000 2    50   ~ 0
+Text Label 1250 6300 2    50   ~ 0
 SCSI_GND
-Text Label 4250 7200 2    50   ~ 0
+Text Label 1250 7500 2    50   ~ 0
 SCSI_DB7
-Text Label 4250 6800 2    50   ~ 0
+Text Label 1250 7100 2    50   ~ 0
 SCSI_DB5
-Text Label 4250 5000 2    50   ~ 0
+Text Label 1250 5300 2    50   ~ 0
 SCSI_MSG
-Text Label 4250 5400 2    50   ~ 0
+Text Label 1250 5700 2    50   ~ 0
 SCSI_RST
-Text Label 4250 5800 2    50   ~ 0
+Text Label 1250 6100 2    50   ~ 0
 SCSI_BSY
-Text Label 4250 6200 2    50   ~ 0
+Text Label 1250 6500 2    50   ~ 0
 SCSI_DB0
-Text Label 4250 6600 2    50   ~ 0
+Text Label 1250 6900 2    50   ~ 0
 SCSI_DB3
-Text Label 4250 7000 2    50   ~ 0
+Text Label 1250 7300 2    50   ~ 0
 SCSI_DB6
-Text Label 4250 4900 2    50   ~ 0
+Text Label 1250 5200 2    50   ~ 0
 SCSI_GND
-Text Label 4250 6900 2    50   ~ 0
+Text Label 1250 7200 2    50   ~ 0
 SCSI_GND
-Text Label 4250 6500 2    50   ~ 0
+Text Label 1250 6800 2    50   ~ 0
 SCSI_DB2
-Text Label 4250 6100 2    50   ~ 0
+Text Label 1250 6400 2    50   ~ 0
 SCSI_DBP
-Text Label 4250 6400 2    50   ~ 0
+Text Label 1250 6700 2    50   ~ 0
 SCSI_GND
-Text Label 4250 5700 2    50   ~ 0
+Text Label 1250 6000 2    50   ~ 0
 SCSI_GND
-Text Label 4250 5100 2    50   ~ 0
+Text Label 1250 5400 2    50   ~ 0
 SCSI_C_D
-Text Label 4250 5500 2    50   ~ 0
+Text Label 1250 5800 2    50   ~ 0
 SCSI_ATN
-Text Label 4250 5900 2    50   ~ 0
+Text Label 1250 6200 2    50   ~ 0
 SCSI_SEL
-Text Label 4250 6700 2    50   ~ 0
+Text Label 1250 7000 2    50   ~ 0
 SCSI_DB4
-Text Label 4250 7100 2    50   ~ 0
+Text Label 1250 7400 2    50   ~ 0
 SCSI_TERMPWR
-Text Label 4250 6300 2    50   ~ 0
+Text Label 1250 6600 2    50   ~ 0
 SCSI_DB1
+Text Notes 650  4700 0    50   ~ 0
+DB-25 input from SCSI cards\nwithout detachable connectors
 $EndSCHEMATC

@@ -1099,12 +1099,12 @@ Wire Notes Line
 Wire Notes Line
 	9850 5850 7050 5850
 $Comp
-L Connector:DB25_Male J?
+L Connector:DB25_Male J6
 U 1 1 60D17137
 P 4550 6000
-F 0 "J?" H 4730 6046 50  0000 L CNN
-F 1 "DB25_Male" H 4730 5955 50  0000 L CNN
-F 2 "" H 4550 6000 50  0001 C CNN
+F 0 "J6" H 4468 4508 50  0000 C CNN
+F 1 "DB25_Male" H 4468 4599 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-25_Male_EdgeMount_P2.77mm" H 4550 6000 50  0001 C CNN
 F 3 " ~" H 4550 6000 50  0001 C CNN
 	1    4550 6000
 	1    0    0    1   
