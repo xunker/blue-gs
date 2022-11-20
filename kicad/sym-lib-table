@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name "105162-0001")(type "Legacy")(uri "${KIPRJMOD}/footprints/Molex 105162-0001/105162-0001.lib")(options "")(descr ""))
   (lib (name "bluescsi_iigs_internal-rescue")(type "Legacy")(uri "${KIPRJMOD}/bluescsi_iigs_internal-rescue.lib")(options "")(descr ""))
+  (lib (name "ucc3916")(type "KiCad")(uri "${KIPRJMOD}/ucc3916.kicad_sym")(options "")(descr ""))
 )
