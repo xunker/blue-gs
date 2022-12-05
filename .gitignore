@@ -1,2 +1,3 @@
 .DS_Store
 kicad/bluescsi_iigs_internal-backups/*
+**/fp-info-cache
