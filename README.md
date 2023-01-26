@@ -41,29 +41,25 @@ BlueGS connects between your SCSI card and its external DB-25 connector to give 
 
 * Gives your Apple IIgs or //e an internal, cable-free hard drive
 * Can be powered from SCSI termination power only (if present)
-* "Termination Power" mod is not required (when powered from the IIgs internal fan connector)
-* Can *provide* termination power to the SCSI bus (when powered from the IIgs internal fan connector)
+* "Termination Power" mod is not required (when powered from auxiliary 5V source)
+* Can *provide* termination power to the SCSI bus (when powered from a 5V source such as the Game IO connector or card slot)
 * Built-in termination that is controlled with a single switch
-* TI/Unitrode termination ICs instead of passive termination, reduces power consumption by over 2/3rds
+* Active termination ICs instead of passive termination resistors, reduces power consumption by over 2/3rds
+* Reverse current and voltage protection with overcurrent prevention for auxiliary 5V input
 * Connection for external drive activity LED
 
-[![Annotated picture of front of BlueGS v1.2](images/bluegs_v1.2_board_front_annotated_thumb.jpg)](images/bluegs_v1.2_board_front_annotated.jpg)
-[![Annotated picture of rear of BlueGS v1.2](images/bluegs_v1.2_board_rear_annotated_thumb.jpg)](images/bluegs_v1.2_board_rear_annotated.jpg)
+[![Annotated picture of front of BlueGS v1.2](images/bluegs-bp-v1.4_board_front_annotated_thumb.jpg)](images/bluegs-bp-v1.4_board_front_annotated.jpg)
+[![Annotated picture of rear of BlueGS v1.2](images/bluegs-bp-v1.4_board_rear_annotated_thumb.jpg)](images/bluegs-bp-v1.4_board_rear_annotated.jpg)
 
 # Compatible SCSI cards
 
 Tested:
 * [GGLabs A2SCSI](https://gglabs.us/node/2071) - a clone of the Apple Rev C SCSI card
-
-Untested, but expected to be compatible:
 * Apple Rev C SCSI and clones
 * Apple High-Speed SCSI ("Sandwich II")
-
-Unknown, but likely compatible:
 * Ramfast SCSI
-* Any SCSI card that uses has the same IDC-26/DB-25 pinout as the Apple Rev C SCSI
 
-If you have an SCSI card with an IDC-26/DB-25 connector that has not been tested and would be willing to test your card with BlueGS, please [contact us](https://github.com/xunker/blue-gs/issues) to arrange to have a test unit sent to you.
+The CMS SCSI II is currently confirmed **NOT** to work, though it appears to be a (card) firmware issue and not a "bug" with BlueSCSI.
 
 ## How do I know if my card provides "termination power"? What if it doesn't?
 
@@ -71,13 +67,19 @@ Running BlueGS from "termination power" makes installation much easier, but not 
 
 # Performance
 
-Using [BenchmarkD](https://www.brutaldeluxe.fr/products/apple2gs/benchmarked.html) with Apple IIgs (ROM 1, "Fast" speed), GS-RAM Plus w/ 2MB, GGLabs A2SCSI card.
+Using [BenchmarkD](https://www.brutaldeluxe.fr/products/apple2gs/benchmarked.html) with Apple IIgs (ROM 1, "Fast" speed), GS-RAM Plus w/ 2MB, GGLabs A2SCSI card. Using Blue-Pill-based BlueGS board.
 
 * Read
   * File: 52 KB/s
   * Block-by-block: 36 KB/s
   * With 64K buffer: 79 KB/s
 * Write (File): 37 KB/s
+
+# Can I use it on things besides the IIgs and //e?
+
+Yes! It's is a standard BlueSCSI device and uses the standard BlueSCSI V1 firmware.
+
+In fact, the built-in DB-25 connector makes it the perfect external SCSI drive for any 25-pin card!
 
 # Assembly
 
@@ -89,27 +91,30 @@ If your BlueGS was purchased fully-assembled, please move on to the "[Installati
 Installation guides can be found in the "[installation](installation/)" directory.
 # Schematics
 
-[V1.3 Schematic](schematics/schematic_v1.3.pdf) (**non-final**, subject to change)
+[V1.4 Schematic](schematics/schematic_v1.4.pdf) (**FINAL**, recommended design)
+
+<details>
+  <summary>Older Schematics</summary>
+
+[V1.3 Schematic](schematics/schematic_v1.3.pdf)
 
 [V1.2 Schematic](schematics/schematic_v1.2.pdf)
 
 [V1.1 Schematic](schematics/schematic_v1.1.pdf)
 
+</details>
+
 # EDA/Kicad and Gerber Files
 
 Kicad of current design can be found in [kicad](kicad/) directory.
 
-Gerber files for v1.2 can be found in the [gerbers/v1.2](gerbers/v1.2) directory. **Note:** v1.2 has bugs and it not recommended for general use. V1.3 will be available shortly which will address these bugs.
-
 # Credits
 
-This project would not be possible without the work done by [ztto](https://github.com/ztto/ArdSCSino-stm32), [Tambo](https://twitter.com/h_koma2), [Eric Helgeson](https://github.com/erichelgeson/BlueSCSI), and many others.
+This project would not be possible without the work done by [ztto](https://github.com/ztto/ArdSCSino-stm32), [Tambo](https://twitter.com/h_koma2), [Eric Helgeson](https://github.com/erichelgeson/BlueSCSI), [Androda](https://androda.work/), and many others.
 
 The "Blue Pill" footprint was originally created by [Yet-Another-Average-Joe](https://github.com/yet-another-average-joe/Kicad-STM32).
 
 Symbol and footprint for Molex 105162-0001 MicroSD slot created by [SnapEDA user HMantz](https://www.snapeda.com/parts/105162-0001/Molex/view-part/).
-
-External LED driver circuit credit to @akuker on Open Retro SCSI Discord.
 
 # License
 
