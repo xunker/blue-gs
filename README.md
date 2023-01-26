@@ -39,9 +39,17 @@ Tested:
 * Apple High-Speed SCSI ("Sandwich II")
 * Ramfast SCSI
 
+Assumed to work:
+* GSE-Reactive SCSI Card
+
+Untested:
+* AMR SCSI
+* Cirtech SCSI/Insyder
+* SVA Hard Disk Adapter
+
 The CMS SCSI II is currently confirmed **NOT** to work, though it appears to be a (card) firmware issue and not a "bug" with BlueSCSI.
 
-## How do I know if my card provides "termination power"? What if it doesn't?
+## What if my SCSI card doesn't provide termination power?
 
 Running BlueGS from "termination power" makes installation much easier, but not all SCSI cards have it. For more details, please check out the notes on [Powering BlueGS](POWERING_BLUE-GS.md).
 
