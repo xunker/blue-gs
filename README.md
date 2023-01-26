@@ -63,7 +63,7 @@ Using [BenchmarkD](https://www.brutaldeluxe.fr/products/apple2gs/benchmarked.htm
 
 # Can I use it on things besides the IIgs and //e?
 
-Yes! It's is a standard BlueSCSI device and uses the standard BlueSCSI V1 firmware. In fact, the built-in DB-25 connector makes it the perfect external SCSI drive as well!
+Yes! It's a standard BlueSCSI device and uses the standard BlueSCSI V1 firmware. In fact, the built-in DB-25 connector makes it the perfect external SCSI drive as well!
 
 BlueGS can be mounted internally in any computer that has an open cutout for a DB-25 connector.
 
