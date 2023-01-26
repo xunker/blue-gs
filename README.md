@@ -1,4 +1,4 @@
-# BlueGS: Internal BlueSCSI for Apple IIgs and Enhanced //e
+# BlueGS: Internal BlueSCSI for Apple IIgs and //e
 
 *BlueGS* is the internal hard drive your Apple IIgs and //e always *craved*.
 
@@ -10,7 +10,7 @@ Using the [BlueSCSI](https://github.com/erichelgeson/BlueSCSI) SCSI drive emulat
 
 # How it works
 
-BlueGS connects between your SCSI card and its external DB-25 connector to give you a seamless installation. The BlueGS module itself mounts in a free DB-25 connector cutout in the rear of your IIgs or Enhanced //e.
+BlueGS connects between your SCSI card and its external DB-25 connector to give you a seamless installation. The BlueGS module itself mounts in a free DB-25 connector cutout in the rear of your IIgs or //e.
 
 [![Overhead view of BlueGS in IIgs slot](images/bluegs_v1.2_installed_overhead_thumb.jpg)](images/bluegs_v1.2_installed_overhead.jpg)
 [![Frontal view of BlueGS in IIgs slot](images/bluegs_v1.2_installed_front_thumb.jpg)](images/bluegs_v1.2_installed_front.jpg)
@@ -63,9 +63,29 @@ Using [BenchmarkD](https://www.brutaldeluxe.fr/products/apple2gs/benchmarked.htm
 
 # Can I use it on things besides the IIgs and //e?
 
-Yes! It's is a standard BlueSCSI device and uses the standard BlueSCSI V1 firmware.
+Yes! It's is a standard BlueSCSI device and uses the standard BlueSCSI V1 firmware. In fact, the built-in DB-25 connector makes it the perfect external SCSI drive as well!
 
-In fact, the built-in DB-25 connector makes it the perfect external SCSI drive for any 25-pin card!
+BlueGS can be mounted internally in any computer that has an open cutout for a DB-25 connector.
+
+## ✅ Compatible Apple clones
+
+These computers *do* have rear DB-25 cutouts and so BlueGS should be able to mount properly, but are untested.
+
+* Franklin Ace 2000/2100/2200
+* Basis 108
+
+## 🚫 Apple II/II+ and similar clones
+
+BlueGS will function in an Apple II or II+, but you will not be able to mount it because it uses "V" shaped cutouts instead of D-Subminiature connector cutouts like the //e and IIgs have.
+
+Many Apple II clones use the same rear cutout design and have the same mounting limitation. **A mounting solution for these machine is planned**.
+
+* Franklin Ace 100/1000/1200
+* Pravetz-8
+  - Includes the -8, -82, -8M, -8A, -8E, and -8C
+* Unitron (Brazil)
+* Ci Base-48 and Pineapple (Korea)
+
 
 # Assembly
 
