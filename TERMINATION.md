@@ -1,6 +1,6 @@
 # Blue-GS: Compatible Termination ICs
 
-## Blue-GS v1.2
+## Blue-GS v1.2 and above
 
 Any of the following in a SOIC-16 package are compatible:
 * UC5603
